@@ -4,7 +4,7 @@ kind: Certificate
 metadata:
   name: hilwa-fr-tls
 spec:
-  secretName: hilwa-fr
+  secretName: secret-hilwa-fr
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer

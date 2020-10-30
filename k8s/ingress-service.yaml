@@ -14,7 +14,7 @@ spec:
     - hosts:
         - hilwa.fr
         - www.hilwa.fr
-      secretName: hilwa-fr
+      secretName: secret-hilwa-fr
   rules:
     - host: hilwa.fr
       http:
