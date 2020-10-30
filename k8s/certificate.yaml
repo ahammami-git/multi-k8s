@@ -1,0 +1,21 @@
+  
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: hilwa-fr-tls
+spec:
+  secretName: hilwa-fr
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: hilwa.fr
+  dnsNames:
+    - hilwa.fr
+    - www.hilwa.fr
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - hilwa.fr
+          - www.hilwa.fr
