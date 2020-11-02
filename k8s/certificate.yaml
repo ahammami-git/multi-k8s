@@ -7,7 +7,7 @@ spec:
   secretName: secret-hilwa-fr
   issuerRef:
     name: letsencrypt-prod
-    kind: Issuer
+    kind: ClusterIssuer
   commonName: hilwa.fr
   dnsNames:
     - hilwa.fr
